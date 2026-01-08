@@ -1,0 +1,30 @@
+{
+  "name": "lulu-bot",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:commands": "dotenv -e .env.dev -- node deploy-commands.js",
+    "prod:commands": "dotenv -e .env.prod -- node deploy-commands.js",
+    "dev:bot": "dotenv -e .env.dev -- node index.js",
+    "prod:bot": "dotenv -e .env.prod -- node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "cheerio": "^1.0.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^24.4.0",
+    "undici": "^7.5.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^10.0.0"
+  }
+}
