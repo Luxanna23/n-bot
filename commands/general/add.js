@@ -239,7 +239,7 @@ async function publishLeaderboard() {
       .setTitle("🏆 Classement :")
       .setDescription(description)
       .setColor(0x2b2d31)
-      .setFooter({ text: `Lulu Bot — Page ${i + 1}/${pages.length}` })
+      .setFooter({ text: `n bot — Page ${i + 1}/${pages.length}` })
       .setTimestamp(new Date());
 
     const existingId = config.messageIds[i];
